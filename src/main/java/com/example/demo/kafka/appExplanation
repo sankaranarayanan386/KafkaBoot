@@ -1,0 +1,13 @@
+This application demonstrates the basic kafka operation where we use post to produce a 
+message which gets consumed automatically and returns the response in the log in the 
+eclipse console
+
+First start the zookeepr using cmd from the kafka location inside D:/kafka/bin/windows
+
+cmd for zookeeper-server-start.bat ../../config/zookeeper.properties
+cmd for kafka-server-start.bat ../../config/server.properties
+
+
+Postman example url
+
+POST http://localhost:9000/kafka/publish?message="sankar"
